@@ -31,7 +31,7 @@ cd -
 
 rpm-ostree install papirus-icon-theme adw-gtk3-theme
 
-rpm-ostree install google-noto-\*
+rpm-ostree install google-noto-fonts-all google-noto-fonts-common
 
 # this would install a package from rpmfusion
 # rpm-ostree install vlc
