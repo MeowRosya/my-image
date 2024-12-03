@@ -16,10 +16,20 @@ RELEASE="$(rpm -E %fedora)"
 
 # rpm-ostree install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
-rpm-ostree install hyprland waybar nautilus wofi kitty
-rpm-ostree kargs --append=rd.driver.blacklist=nouveau --append=modprobe.blacklist=nouveau --append=nvidia-drm.modeset=1
-rpm-ostree install tuned tuned-ppd
-rpm-ostree install distrobox flatpak network-manager-applet pipewire wireplumber pipewire-pulse pipewire-alsa
+
+rpm-ostree override remove firefox
+rpm-ostree install distrobox rsms-inter-fonts rsms-inter-vf-fonts gnome-tweaks dconf-editor
+
+cd tmp
+wget https://li.nux.ro/download/nux/dextop/el7/x86_64/webcore-fonts-3.0-1.noarch.rpm
+rpm-ostreee install webcore-fonts-3.0-1.noarch.rpm
+
+wget https://li.nux.ro/download/nux/dextop/el7/x86_64/webcore-fonts-vista-3.0-1.noarch.rpm
+rpm-ostreee install webcore-fonts-vista-3.0-1.noarch.rpm
+
+cd -
+
+rpm-ostree install google-noto-fonts-all google-noto-fonts-common
 
 # this would install a package from rpmfusion
 # rpm-ostree install vlc
