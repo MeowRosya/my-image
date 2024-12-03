@@ -22,10 +22,10 @@ rpm-ostree install distrobox rsms-inter-fonts rsms-inter-vf-fonts gnome-tweaks d
 
 cd tmp
 wget https://li.nux.ro/download/nux/dextop/el7/x86_64/webcore-fonts-3.0-1.noarch.rpm
-rpm-ostreee install webcore-fonts-3.0-1.noarch.rpm
+rpm-ostree install webcore-fonts-3.0-1.noarch.rpm
 
 wget https://li.nux.ro/download/nux/dextop/el7/x86_64/webcore-fonts-vista-3.0-1.noarch.rpm
-rpm-ostreee install webcore-fonts-vista-3.0-1.noarch.rpm
+rpm-ostree install webcore-fonts-vista-3.0-1.noarch.rpm
 
 cd -
 
