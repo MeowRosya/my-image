@@ -17,7 +17,7 @@ RELEASE="$(rpm -E %fedora)"
 # rpm-ostree install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
 
-rpm-ostree override remove firefox firefox-langpacks
+rpm-ostree override remove firefox firefox-langpacks ptyxis
 rpm-ostree install distrobox rsms-inter-fonts rsms-inter-vf-fonts gnome-tweaks dconf-editor
 
 cd tmp
