@@ -29,7 +29,7 @@ rpm-ostree install webcore-fonts-vista-3.0-1.noarch.rpm
 
 cd -
 
-rpm-ostree install papirus-icon-theme adw-gtk3-theme
+rpm-ostree install papirus-icon-theme
 
 rpm-ostree install google-noto-fonts-all google-noto-fonts-common
 
