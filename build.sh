@@ -18,9 +18,9 @@ RELEASE="$(rpm -E %fedora)"
 
 
 rpm-ostree override remove firefox firefox-langpacks ptyxis
-rpm-ostree install distrobox rsms-inter-fonts rsms-inter-vf-fonts gnome-tweaks dconf-editor tmux
+rpm-ostree install distrobox rsms-inter-fonts rsms-inter-vf-fonts tmux konsole
 
-cd tmp
+cd /tmp
 wget https://li.nux.ro/download/nux/dextop/el7/x86_64/webcore-fonts-3.0-1.noarch.rpm
 rpm-ostree install webcore-fonts-3.0-1.noarch.rpm
 
@@ -31,7 +31,7 @@ cd -
 
 rpm-ostree install papirus-icon-theme
 
-rpm-ostree install google-noto-fonts-all google-noto-fonts-common
+rpm-ostree install google-noto-fonts-all google-noto-fonts-common google-noto-sans-cjk-ttc-fonts
 
 # this would install a package from rpmfusion
 # rpm-ostree install vlc
